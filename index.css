@@ -1,0 +1,52 @@
+.wrapper{
+    max-width: 1296px;
+    border: 3px solid rgb(66, 76, 255);
+
+    padding: 20px;   /* внутренний отступ */
+    margin: 0 auto;   /* внешний отступ */
+
+    
+}
+
+.block{
+    display: flex;   /* Данная команда даёт управление к flex-элементам */
+    justify-content: space-between;   /* Управление координатой X */
+    
+    width: 100%;
+    /* border: 3px solid red; */
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+    
+}
+
+.cards{
+    border: 1px solid red;
+    display: flex;
+    gap: 24px;
+}
+
+.card_block_big{
+    width: 416px;
+    height: 540px;
+    background-color: brown;
+}
+
+.card_block_small{
+    width: 416px;
+    height: 258px;
+    background-color:rgb(66, 76, 255);
+}
+
+.column_2{
+    justify-content: space-between;
+    align-content: space-between;   /* Управление координатой Y */
+    flex-wrap: wrap;   /* Говорим что если элемент выходит за края родителя, спускаем ниже элемент */
+    display: flex;
+}
+
